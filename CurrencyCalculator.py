@@ -66,8 +66,8 @@ def convert():
     return jsonify({
         'from': from_currency,
         'to': to_currency,
-        'amount': amount,
-        'converted_amount': result
+        'amount': f"{amount} {from_currency}",
+        'converted_amount': f"{result} {to_currency}"
     })
 
 
